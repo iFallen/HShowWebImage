@@ -1,4 +1,3 @@
-[版权所有,转载请注明出处!](http://juanfelix.sinaapp.com)
 
 ### 通过Tap事件获取 UIWebView 中的图片
 
@@ -85,12 +84,12 @@ func touchOnWebViewRecognizedForWeb(gestureRecognizer: UITapGestureRecognizer) {
 
 ##### 效果图
 
-![image](https://github.com/iFallen/ImageTemp/raw/master/ScreenShots/Blog4/1.png =320x)
-![image](https://github.com/iFallen/ImageTemp/raw/master/ScreenShots/Blog4/2.png =320x)
+![image](https://github.com/iFallen/ImageTemp/raw/master/ScreenShots/Blog4/1.png)
+![image](https://github.com/iFallen/ImageTemp/raw/master/ScreenShots/Blog4/2.png)
 
 ---
 
-[SourceCode](http://)
+[SourceCode](https://github.com/iFallen/HShowWebImage)
 
 
 
