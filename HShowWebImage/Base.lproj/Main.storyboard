@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HShowWebImage" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5WF-um-Sm0">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="BeT-7h-IYQ"/>
+                                </connections>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5WF-um-Sm0" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="Dr4-LU-7hD"/>
+                            <constraint firstItem="5WF-um-Sm0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="GP2-aJ-In2"/>
+                            <constraint firstItem="5WF-um-Sm0" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="VoO-Du-DP8"/>
+                            <constraint firstAttribute="trailing" secondItem="5WF-um-Sm0" secondAttribute="trailing" id="ymC-6j-PGc"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="5WF-um-Sm0"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Dr4-LU-7hD"/>
+                                <exclude reference="GP2-aJ-In2"/>
+                                <exclude reference="VoO-Du-DP8"/>
+                                <exclude reference="ymC-6j-PGc"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="5WF-um-Sm0"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Dr4-LU-7hD"/>
+                                <include reference="GP2-aJ-In2"/>
+                                <include reference="VoO-Du-DP8"/>
+                                <include reference="ymC-6j-PGc"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="5WF-um-Sm0" id="fPP-66-JkZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="106.5" y="303.75"/>
+        </scene>
+    </scenes>
+</document>
